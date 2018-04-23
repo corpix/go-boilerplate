@@ -28,8 +28,8 @@ templates = [
     ".go-makefile.json",
     ".travis.yml",
     "Makefile",
-    "glide.yaml",
-    "glide.lock"
+    "Gopkg.lock",
+    "Gopkg.toml"
 ]
 
 # This files should be removed from the bootstraped project.
