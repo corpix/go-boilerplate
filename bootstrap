@@ -28,6 +28,7 @@ templates = [
     ".go-makefile.json",
     ".travis.yml",
     "Makefile",
+    "debug.mk",
     "Gopkg.lock",
     "Gopkg.toml"
 ]
