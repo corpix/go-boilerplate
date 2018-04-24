@@ -7,7 +7,7 @@ RUN     make
 FROM fedora:latest
 
 RUN  mkdir          /etc/go-boilerplate
-COPY                /go/src/github.com/corpix/go-boilerplate/config.json           /etc/go-boilerplate/config.json
+COPY --from=builder /go/src/github.com/corpix/go-boilerplate/config.json           /etc/go-boilerplate/config.json
 COPY --from=builder /go/src/github.com/corpix/go-boilerplate/build/go-boilerplate  /usr/bin/go-boilerplate
 
 CMD [                                 \
