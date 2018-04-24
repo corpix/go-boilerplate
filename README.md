@@ -33,36 +33,20 @@ $ ./bootstrap --description 'Hello world' --name test --user corpix --host githu
 
 New project in `$GOPATH/src/github.com/corpix/test` is waiting for you :)
 
-## Development
-
-All development process accompanied by containers(docker).
-
-## Optional requirements
-
-If you plan to use some containerisation then you should have:
-
-- [docker](https://github.com/moby/moby)
-- [docker-compose](https://github.com/docker/compose)
-
-> Or if you use nixos(or have bubblewrap+nix on linux) you could use [nix-cage](https://github.com/corpix/nix-cage)
-
-### Running go-boilerplate
-
-Build a binary release:
-
-``` console
-$ GOOS=linux make
-# This will put a binary into ./build/go-boilerplate
-```
-
-#### Docker
-
-``` console
-$ docker-compose up go-boilerplate
-```
-
-#### No isolation
+## Run
 
 ``` console
 $ go run ./go-boilerplate/go-boilerplate.go --debug
 ```
+
+### Docker
+
+> If you use something other than Linux then
+> You should run `make` like this `make GOOS=linux`
+> Otherwise your container will not work
+
+``` console
+$ make
+$ docker-compose up go-boilerplate
+```
+
