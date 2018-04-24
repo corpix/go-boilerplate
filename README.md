@@ -33,6 +33,14 @@ $ ./bootstrap --description 'Hello world' --name test --user corpix --host githu
 
 New project in `$GOPATH/src/github.com/corpix/test` is waiting for you :)
 
+## Get
+
+> You will need Go >=1.9
+``` console
+$ go get github.com/corpix/go-boilerplate
+$ cd $GOPATH/src/github.com/corpix/go-boilerplate
+```
+
 ## Run
 
 ``` console
